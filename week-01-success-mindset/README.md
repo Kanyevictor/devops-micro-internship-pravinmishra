@@ -33,7 +33,7 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-test
+I believe that one can be not corrupt even in the midst of corruption, i also believe it is important to always do good even if the person you do good for does bad,alot of people do not agree with me on this, because it means refusing to compromise your values even when it can cost short term gains. This would help one to be provide support and mentorship to colleagues even to those that may act selfishly 
 
 ---
 
@@ -55,35 +55,33 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Building habits consciously requires discipline and consistency
 
 ### Evidence from my life
 
-Add your answer here...
-
+Having to fail at building a particular habit severally, until i have to be so conscious about it. Although it felt late, but i wished i knew this earlier and was able to build the routine i wanted 
 ---
 
 ## Truth #2
 
 ### Truth
 
-Add your answer here...
+I can learn to be what i want to be, but i cant be everything
 
 ### Evidence from my life
 
-Add your answer here...
-
+I have always wanted to have an idea about everything i come accross , this broke my focus line in the university and now i have realised that been focused and good at a particular thing while still open minded is an advantage
 ---
 
 ## Truth #3
 
 ### Truth
 
-Add your answer here...
+Life is spiritual
 
 ### Evidence from my life
 
-Add your answer here...
+I am a Christian, and i have found that most of the important decisions i have made in life including comimg across this internship has been because of Jesus, when i meditate he give me clarity and instructions to follow 
 
 ---
 
@@ -134,14 +132,13 @@ Include this line:
 > **P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) ( https://discord.pravinmishra.com/ ).**
 
 ## Your Article
-
-Add your answer here...
-
+ The version 2.0 
+After Victor present Masters in Systems and Network Security in Innopolis University, his github repository became his portfolio, alongside with several research papers and journals published. Victor continues to pursue pHD opportunities in Europe with actual experience from the field bridging the gap of research and industry. Adekanye writes consistently a technical blog documenting real fixes and implementation tip, also mentoring younger engineers who are just starting and trying to find thier field and focus. In the artificial intelligence Victor would take the side of the humans with the aim of making agentic agents safe for humanity 
 ### Public Link
 
 Paste your link here:
 
-`__________________________`
+https://medium.com/@kanyevictoray/my-version-2-0-4ca1aea03c10
 
 ---
 
@@ -167,7 +164,7 @@ This is about self-awareness, not judgment.
 
 **Yes / No**
 
-If Yes:
+If Yes:No
 
 **What emotion did you feel?** (minimum 50–100 words)
 
@@ -203,15 +200,15 @@ Choose books that improve:
 
 ![Assignment 5 Screenshot](screenshots/week-01-screenshot-01.png)
 
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+2. The War of Art - Pressfield
+3. So Good They Can't Ignore You- Newport
+4. Site Reliability Engineering (Google)
+5. Designing Your Life (Burnett, Evans)
+6. 5am Club (Robin Sharma)
+7. Deepwork(Newport)
+8. Pratical Malware Analysis (Sikroski)
+9. The Phoenix Project(Kim)
+10. Building Secure and Reliable Systems(Google)
 
 ---
 
@@ -240,16 +237,14 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+* Learning hours per week
+* Exercises and meditation periods
+* Sleep hours 
+* Focus time
+* Money/ with Business
+* Projects Documented
+* Scholarships and Jobs applied for
+* Research papers drafts
 
 ---
 
@@ -273,9 +268,9 @@ Examples:
 
 **Yes / No**
 
-Answer:
+Answer: 
 
-Add your answer here...
+Yes
 
 ---
 
@@ -295,18 +290,23 @@ Example:
 
 Add your answer here...
 
----
+Mon- Thu 5Hours Office Work 3 Hours Personal projects
+
+Friday - Socialising integrated (meeting with friends)
+
+Saturday- DMI session
+
+Sunday- Mostly preparing for the weekly standups 
 
 ### Focus Blocks
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+I would touch it everyday during my personal project
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
-
+2 hours sessios per day which is 5 sessions per week
 ---
 
 ### Distraction Rules
@@ -319,23 +319,22 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
-
+Keeping my phone away 
+Checking my mails and doing the 2 hours rule
 ---
 
 # Reflection – Week 1
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+I got the inspiration that i can get it worked out after the brain dump, i was able to draw out a timetable
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
-
+Discipline and Consistency
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+Reading a book
 
 ### LinkedIn Post
 
@@ -348,7 +347,7 @@ Paste your LinkedIn post link here:
 ## 10. Proof of Work
 
 - LinkedIn Post URL: **ADD LINK HERE**  
-- Blog / Medium : **ADD LINK HERE**  
+- Blog / Medium : https://medium.com/@kanyevictoray/my-version-2-0-4ca1aea03c10
 
 ---
 
