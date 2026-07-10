@@ -33,7 +33,11 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-test
+<<<<<<< HEAD
+I believe that one can be not corrupt even in the midst of corruption, i also believe it is important to always do good even if the person you do good for does bad,alot of people do not agree with me on this, because it means refusing to compromise your values even when it can cost short term gains. This would help one to be provide support and mentorship to colleagues even to those that may act selfishly 
+=======
+Add your answer here...
+>>>>>>> upstream/main
 
 ---
 
@@ -196,19 +200,22 @@ Choose books that improve:
 
 ## Book List
 
+<<<<<<< HEAD
 1. Atomic Habits
 
 ![Assignment 5 Screenshot](screenshots/week-01-screenshot-01.png)
 
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+2. The War of Art - Pressfield
+3. So Good They Can't Ignore You- Newport
+4. Site Reliability Engineering (Google)
+5. Designing Your Life (Burnett, Evans)
+6. 5am Club (Robin Sharma)
+7. Deepwork(Newport)
+8. Pratical Malware Analysis (Sikroski)
+9. The Phoenix Project(Kim)
+10. Building Secure and Reliable Systems(Google)
+=======
+
 
 ---
 

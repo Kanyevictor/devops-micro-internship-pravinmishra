@@ -20,13 +20,7 @@
 | **Location** | Kazan, Russia |
 | **Background** | Network Engineer |
 | **Goal** | To become a Machine learning Ops Engineer|
-=======
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
->>>>>>> upstream/main
+
 
 ---
 
