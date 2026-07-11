@@ -46,7 +46,8 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+[Screenshot 47](screenshots/Screenshot_047.png)
+
 
 ---
 
@@ -54,7 +55,7 @@ Add your screenshot here.
 
 Blog Link:
 
-`__________________________________________`
+https://medium.com/@kanyevictoray/agentic-ai-the-future-vs-the-process-8d0300b1aa50?sharedUserId=kanyevictoray
 
 ---
 
@@ -92,7 +93,8 @@ P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by 
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+[Screenshot 48](screenshots/Screenshot_048.png)
+
 
 ---
 
@@ -100,17 +102,31 @@ Add your screenshot here.
 
 LinkedIn Post Content (copy-paste here):
 
-```
-Paste your LinkedIn post content here
-```
+Agentic AI in DevOps: Trust Nothing. Verify Everything.
+
+
+For more than four hours last week. I was sure my safety hook was blocking destructive commands in Claude Code. It wasn’t. It had been failing on every single tool call the entire time, and Claude Code though helpful, obedient, terrifying Claude Code — had been quietly continuing anyway.
+
+The hook existed. It was executable. It was registered in settings.json at the right lifecycle event with the right matcher. When Claude Code started my session, it dutifully invoked the script on every prompt. And the script errored out immediately, because jq wasn't installed on my system.[A different one anyway] Claude Code caught the non-zero exit code, logged a friendly PreToolUse:Bash hook error — failed with non-blocking status code, and kept going.
+
+
+Most times failures are silent by default. No red banner. No fatal error. No abort. Just a system that looks like it’s working from the outside, and isn’t.
+
+This is the discipline gap. It’s not about whether you know what a hook is. It’s about whether, after you write the hook, you tail the log and issue a test command and watch it fire. 
+It’s about whether, after you set a permission rule, you actually try to break past it. It’s about whether you cat the file after saving to confirm the edit landed. It's about assuming your guards are broken until you've seen them stop something.
+
+*Agentic AI didn’t make DevOps easier. It made the discipline gap wider — because the tools are now generous enough that shipping fast doesn’t require competence, but shipping safely absolutely does. If you’re not verifying, you’re not doing DevOps. You’re just watching a machine work, and hoping the machine is doing what you meant.*
+
+Hard Lesson: I don’t hope anymore. I tail the log.
+
+
 
 ---
 
 ### LinkedIn Post Link:
 
-`__________________________________________`
 
----
+https://www.linkedin.com/posts/kanyevictor_dmibypravinmishra-agenticai-claudecode-share-7481621134371635200-PAp4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADH20d0B8qKJFUAVinR-kBgKcqfOxZov8RA
 
 # Submission Instructions
 
@@ -124,15 +140,15 @@ Paste your LinkedIn post content here
 
 # Completion Checklist
 
-* [ ] Blog written with required structure
-* [ ] Blog includes at least 2–3 Week 2 topics
-* [ ] Blog is publicly accessible
-* [ ] LinkedIn post created
-* [ ] Required P.S. line included
-* [ ] LinkedIn post content copied in submission field
-* [ ] Blog link added
-* [ ] LinkedIn post link added
-* [ ] Screenshots added to GitHub repo
+* [x] Blog written with required structure
+* [x] Blog includes at least 2–3 Week 2 topics
+* [x] Blog is publicly accessible
+* [x] LinkedIn post created
+* [x] Required P.S. line included
+* [x] LinkedIn post content copied in submission field
+* [x] Blog link added
+* [x] LinkedIn post link added
+* [x] Screenshots added to GitHub repo
 
 ---
 
