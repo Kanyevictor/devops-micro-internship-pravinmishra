@@ -20,25 +20,25 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-Add your screenshot here.
+[Screenshot 61](screenshots/Screenshot_061.png)
 
 ---
 
 #### Screenshot 2 — Output of `ip a`
 
-Add your screenshot here.
+[Screenshot 62](screenshots/Screenshot_062.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
-
-Add your screenshot here.
+[Screenshot 63](screenshots/Screenshot_063.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-Add your screenshot here.
+[Screenshot 64](screenshots/Screenshot_064.png)
+
 
 ---
 
@@ -48,19 +48,19 @@ Answer the following in your own words:
 
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-Write your answer here.
+What shows that nginx is listening on 0.0.0.0:80 is after running the command sudo ss -tulpen i was able to see Listen 0 511 0.0.0.82
 
 ---
 
 **2. What proves SSH is active on port 22?**
 
-Write your answer here.
+Also the output displays the line tcp  LISTEN 0 4096 0.0.0.0:22 showing (sshd which is the ssh daemon actively listening on that port)
 
 ---
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Write your answer here.
+From all open ports the open ones are the crucial ones such as Port 53 for DNS , port 323 for time styncing and port 68 for dhcp [ all these are expected ports to be open] so there was no unexpected open ports 
 
 ---
 
@@ -74,19 +74,20 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-Add your screenshot here.
+[Screenshot 65](screenshots/Screenshot_065.png)
+
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
 
-Add your screenshot here.
+[Screenshot 71](screenshots/Screenshot_071.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
 
-Add your screenshot here.
+[Screenshot 63](screenshots/Screenshot_063.png)
 
 ---
 
@@ -96,14 +97,18 @@ Answer the following in your own words:
 
 **1. What happens if Nginx fails to restart in production?**
 
-Write your answer here.
+If Nginx fails to restart in a live production environment, it triggers an immediate critical service outage.
 
 ---
 
 **2. What's your basic rollback plan?**
 
-Write your answer here.
+A reliable rollback plan ensures you can restore the website to its last known working state within seconds of a failed restart.
 
+Restore the Previous Configuration
+Verify Configuration Integrity
+Force a Safe Restart
+Confirm Live Status
 ---
 
 # Task 3 — Logs & Request Trace
@@ -116,19 +121,18 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-Add your screenshot here.
-
+[Screenshot 73](screenshots/Screenshot_073.png)
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-Add your screenshot here.
+[Screenshot 74](screenshots/Screenshot_074.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-Add your screenshot here.
+[Screenshot 75](screenshots/Screenshot_075.png)
 
 ---
 
@@ -143,17 +147,16 @@ Answer the following in your own words:
 
 Write your answer here.
 
----
+No, there were no errors in the logs.The system logs (journalctl) show that Nginx started, stopped, and restarted cleanly with messages like "deactivated successfully." The snippet of the access log also shows status codes of 200, which means those requests completed successfully.
 
 **2. If there were no errors, what does that indicate about the system?**
 
-Write your answer here.
-
+The absence of errors indicates that the core web server infrastructure is completely healthy
 ---
 
 **3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
 
-Write your answer here.
+No, the curl requests were not visible in the provided log snippet. Instead, the logs captured traffic from an automated network scanner ("zgrab") and a standard web browser ("firefox/152.0").
 
 ---
 
@@ -167,26 +170,25 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-Add your screenshot here.
+[Screenshot 76](screenshots/Screenshot_076.png)
 
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-Add your screenshot here.
+[Screenshot 77](screenshots/Screenshot_077.png)
 
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-Add your screenshot here.
+[Screenshot 78](screenshots/Screenshot_078.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-Add your screenshot here.
-
+[Screenshot 79](screenshots/Screenshot_079.png)
 ---
 
 ### Notes
@@ -195,13 +197,13 @@ Answer the following in your own words:
 
 **1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
 
-Write your answer here.
+Memory (RAM) is the most critical resource right now.
 
 ---
 
 **2. What happens if disk becomes 100% full in a production server?**
 
-Write your answer here.
+When a live production server runs entirely out of disk space, it triggers an immediate system-wide operational failure.
 
 ---
 
@@ -236,8 +238,7 @@ Add your screenshot here.
 Answer the following in your own words:
 
 **1. How do you confirm that the correct version of the application is deployed?**
-
-Write your answer here.
+Based on the terminal output, the grep command to search for specific deployment indicators like "Deployed by" inside the public web folder (/var/www/html).Verified the Output: The search results show the file path and line number containing the deployment details:
 
 ---
 
@@ -273,20 +274,22 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-Write your answer here.
+The configuration failure was caused by a deliberate syntax error introduced into the Nginx configuration file. Specifically, a vital structural element—such as a closing semicolon (;) at the end of a statement
 
 ---
 
 **2. How did you fix the issue?**
 
-Write your answer here.
+Restoring from Backup: The corrupted configuration file was overwritten by copying the clean, functional backup file (default.bak) that was created before the simulation started.
 
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
+Always run syntax tests: Never restart or reload Nginx without running sudo nginx -t first. If the test fails, do not apply the changes.
 
-Write your answer here.
-
+Use zero-downtime reloads: Instead of running a hard restart (which drops active connections),
+ use sudo systemctl reload nginx. A reload reads the new configuration silently in the background; if the file is broken, it safely leaves the old configuration running without interrupting users.
+ Also make sure one backs up
 ---
 
 # Task 7 — Web Application Failure Simulation
@@ -315,19 +318,19 @@ Answer the following in your own words:
 
 **1. What caused the application to break in this scenario?**
 
-Write your answer here
+The application broke because its primary entry point file (index.html) went missing from the designated web root directory (/var/www/html). In this simulation, the file was intentionally renamed to index.html.missing. 
 
 ---
 
 **2. How did you fix the issue and restore the application?**
 
-Write your answer here.
-
+Renaming the File: The command sudo mv index.html.missing index.html was executed to instantly change the file name back to what Nginx expects.
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
-Write your answer here.
+Deploy Using Atomic Symlinks
+Implement a Custom 404 Fallback
 
 ---
 
@@ -343,31 +346,32 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
+Passwords can eventually be guessed or cracked using high-speed automated dictionaries. SSH keys use complex cryptographic pairs (a public and private key) that are mathematically impossible to guess or brute-force.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
+Keeping only necessary ports open minimizes the server's "attack surface," which is the total number of entry points an attacker can exploit
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
+Enabling Nginx to start automatically on system boot ensures high availability and automated recovery for your web application
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
+Instant Automated Exploitation
+System Hijacking
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
+The main reasons to clean up resources are:   Cost Control, Eliminating Forgottten Vulnerabilities
 
 ---
 
@@ -399,17 +403,17 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Screenshots (browser, ip a, ss -tulpen, ufw status) + Notes answered
-- [ ] Task 2: Screenshots (nginx status, nginx -t, ss port 80) + Notes answered
-- [ ] Task 3: Screenshots (access log, error log, journalctl) + Notes answered
-- [ ] Task 4: Screenshots (uptime, free -h, df -h, du -sh) + Notes answered
-- [ ] Task 5: Screenshots (ls html, grep deployed by, grep try_files) + Notes answered
-- [ ] Task 6: Screenshots (nginx -t fail, nginx -t pass, curl recovery) + Notes answered
-- [ ] Task 7: Screenshots (curl failure, curl recovery) + Notes answered
-- [ ] Task 8: Security & Reliability Notes answered
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots
-- [ ] No sensitive data exposed
+- [x] Task 1: Screenshots (browser, ip a, ss -tulpen, ufw status) + Notes answered
+- [x] Task 2: Screenshots (nginx status, nginx -t, ss port 80) + Notes answered
+- [x] Task 3: Screenshots (access log, error log, journalctl) + Notes answered
+- [x] Task 4: Screenshots (uptime, free -h, df -h, du -sh) + Notes answered
+- [x] Task 5: Screenshots (ls html, grep deployed by, grep try_files) + Notes answered
+- [x] Task 6: Screenshots (nginx -t fail, nginx -t pass, curl recovery) + Notes answered
+- [x] Task 7: Screenshots (curl failure, curl recovery) + Notes answered
+- [x] Task 8: Security & Reliability Notes answered
+- [x] LinkedIn post published and URL submitted
+- [x] Full Name visible in all required screenshots
+- [x] No sensitive data exposed
 
 ---
 

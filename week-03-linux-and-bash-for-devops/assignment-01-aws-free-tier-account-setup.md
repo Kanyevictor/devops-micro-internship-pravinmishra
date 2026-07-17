@@ -20,19 +20,24 @@ Demonstrate understanding of AWS basics and Free Tier usage by answering the fol
 
 #### Question 1 — What is an AWS account, and why do you need it at this stage?
 
-Write your answer here.
+An AWS account is an account on Amazon Web Services that is a gateway to provide infrastructure to host applications in the cloud. It is a digital identity that provides centralised access, Management and billing for all Amazon Web services resources you deploy 
 
 ---
 
 #### Question 2 — What is AWS Free Tier, and how long does it last?
 
-Write your answer here.
+The AWS Free Tier is a program from Amazon Web Services (AWS) that can let me try many AWS services at little cost, within usage limits. It's designed to help new users learn AWS, build projects, and experiment without immediately paying for cloud resources.
+
 
 ---
 
 #### Question 3 — Name three AWS Free Tier services and their free usage limits.
 
-Write your answer here.
+Amazon EC2 (Virtual Servers)750 hours per month of t2.micro or t3.micro instances with duration of 12 Months Free
+
+Amazon S3 (Cloud Storage)5 GB of standard storage, 2,000 PUT and 20,000 GET requests 12 Months Free
+
+Amazon DynamoDB (NoSQL Database)25 GB of storage and 25 provisioned Write/Read Capacity Units  Always Free
 
 ---
 
@@ -56,7 +61,7 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 #### Screenshot 1 — AWS Account page showing account name (email may be blurred)
 
-Add your screenshot here.
+[Screenshot 51](screenshots/Screenshot_051.png)
 
 ---
 
@@ -70,11 +75,11 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1 answers written in own words
-- [ ] AWS Free Tier account created successfully
-- [ ] Signed in to AWS Management Console
-- [ ] Screenshot of AWS Account page captured (full name visible, no sensitive data)
-- [ ] All required screenshots added to repository
+- [x] Task 1 answers written in own words
+- [x] AWS Free Tier account created successfully
+- [x] Signed in to AWS Management Console
+- [x] Screenshot of AWS Account page captured (full name visible, no sensitive data)
+- [x] All required screenshots added to repository
 
 ---
 
