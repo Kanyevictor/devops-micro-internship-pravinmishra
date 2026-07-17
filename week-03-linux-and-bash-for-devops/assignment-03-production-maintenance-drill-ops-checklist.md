@@ -20,24 +20,24 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-[Screenshot 61](screenshots/Screenshot_061.png)
+![Screenshot 61](screenshots/Screenshot_061.png)
 
 ---
 
 #### Screenshot 2 — Output of `ip a`
 
-[Screenshot 62](screenshots/Screenshot_062.png)
+![Screenshot 62](screenshots/Screenshot_062.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
-[Screenshot 63](screenshots/Screenshot_063.png)
+![Screenshot 63](screenshots/Screenshot_063.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-[Screenshot 64](screenshots/Screenshot_064.png)
+![Screenshot 64](screenshots/Screenshot_064.png)
 
 
 ---
@@ -74,20 +74,20 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-[Screenshot 65](screenshots/Screenshot_065.png)
+![Screenshot 65](screenshots/Screenshot_065.png)
 
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
 
-[Screenshot 71](screenshots/Screenshot_071.png)
+![Screenshot 71](screenshots/Screenshot_071.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
 
-[Screenshot 63](screenshots/Screenshot_063.png)
+![Screenshot 63](screenshots/Screenshot_063.png)
 
 ---
 
@@ -121,18 +121,18 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-[Screenshot 73](screenshots/Screenshot_073.png)
+![Screenshot 73](screenshots/Screenshot_073.png)
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-[Screenshot 74](screenshots/Screenshot_074.png)
+![Screenshot 74](screenshots/Screenshot_074.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-[Screenshot 75](screenshots/Screenshot_075.png)
+![Screenshot 75](screenshots/Screenshot_075.png)
 
 ---
 
@@ -170,25 +170,25 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-[Screenshot 76](screenshots/Screenshot_076.png)
+![Screenshot 76](screenshots/Screenshot_076.png)
 
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-[Screenshot 77](screenshots/Screenshot_077.png)
+![Screenshot 77](screenshots/Screenshot_077.png)
 
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-[Screenshot 78](screenshots/Screenshot_078.png)
+![Screenshot 78](screenshots/Screenshot_078.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-[Screenshot 79](screenshots/Screenshot_079.png)
+![Screenshot 79](screenshots/Screenshot_079.png)
 ---
 
 ### Notes
@@ -217,19 +217,19 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-Add your screenshot here.
+![Screenshot 80](screenshots/Screenshot_080.png)
 
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-Add your screenshot here.
+![Screenshot 81](screenshots/Screenshot_081.png)
 
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
 
-Add your screenshot here.
+![Screenshot 82](screenshots/Screenshot_082.png)
 
 ---
 
@@ -252,19 +252,19 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-Add your screenshot here.
+![Screenshot 83](screenshots/Screenshot_083.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-Add your screenshot here.
+![Screenshot 84](screenshots/Screenshot_084.png)
 
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![Screenshot 85](screenshots/Screenshot_085.png)
 
 ---
 
@@ -302,13 +302,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
+![Screenshot 86](screenshots/Screenshot_086.png)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![Screenshot 87](screenshots/Screenshot_087.png)
 
 ---
 
